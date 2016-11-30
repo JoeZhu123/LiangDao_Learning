@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>风控系统</title>
+<style>
+.title
+{
+	text-align:center;
+	font-family:"Times New Roman",Times,serif;
+	font-size:40px;
+}
+#background
+{
+	opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+body
+{
+	background-image:url('量道LOGO.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:left bottom;
+	margin-left:100px;
+}
+#customers
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:60%;
+	border-collapse:collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+#customers td, #customers th 
+{
+	font-size:1em;
+	border:1px solid #F0F0F0;
+	padding:3px 7px 2px 7px;
+}
+#customers th 
+{
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#A7C942;
+	color:#ffffff;
+}
+#customers tr.alt td 
+{
+	color:#000000;
+	background-color:#EAF2D3;
+}
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+	text-align:right;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {color: green;}
+</style>
+</head>
+
+<body>
+<h1 class="title">浙江量道投资--风险控制管理</h1>
+<table id="customers">
+<tr>
+  <th> </th>
+  <th> </th>
+  <th>2016/8/16</th>
+  <th>2016/8/15</th>
+  <th>2016/8/12</th>
+  <th>2016/8/11</th>
+</tr>
+<tr>
+   <th rowspan="4">IC20160815组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IC20160810组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IC20160805组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IF20160725组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IF20160801组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IF20160805组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IF20160810组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+<tr>
+   <th rowspan="4">IF20160815组合</th>
+   <td>组合-指数</td>
+   <td>4171.01</td>
+   <td>2972.78</td>
+   <td>5270.20</td>
+   <td>-6231.48</td>
+</tr>
+<tr class="alt">
+   <td>组合-指数(点数)</td>
+   <td>20.86</td>
+   <td>14.86</td>
+   <td>26.35</td>
+   <td>-31.16</td>
+</tr>
+<tr>
+   <td>组合-指数(百分比)</td>
+   <td>0.31%</td>
+   <td>0.22%</td>
+   <td>0.41%</td>
+   <td>-0.49%</td>
+</tr>
+<tr class="alt">
+   <td>alpha基差</td>
+   <td>-6489.75</td>
+   <td>0.00</td>
+   <td>0.00</td>
+   <td>0.00</td>
+</tr>
+<tr>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+   <td> </td>
+</tr>
+</table>
+<ul class="breadcrumb">
+  <li><a href="#">返回顶部</a></li>
+  <li><a href="sheet1.html">计算组合</a></li>
+  <li><a href="sheet2.html">股票参数</a></li>
+</ul>
+</body>
+</html>

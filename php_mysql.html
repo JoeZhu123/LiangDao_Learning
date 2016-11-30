@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>PHP with MySQL</title>
+</head>
+<body>
+<?php>
+   $dbhost='localhost:3306';//mysql
+   $dnuser='root';
+   $dbpass='123456';
+   $conn=mysql_connect($dbhost,$dbuser,$dbpass);
+   if(!$conn){
+       die('Could not connect: '.mysql_error());
+   }
+   echo 'Connected successfully';
+   $sql='CREATE DATABASE liangdao';
+   $sql1 = "CREATE TABLE runoob_tbl( ".
+       "runoob_id INT NOT NULL AUTO_INCREMENT, ".
+       "runoob_title VARCHAR(100) NOT NULL, ".
+       "runoob_author VARCHAR(40) NOT NULL, ".
+       "submission_date DATE, ".
+       "PRIMARY KEY ( runoob_id )); ";
+   mysql_select_db('liangdao');
+   $retval=mysql_query($sql1,$conn);
+   if(!$retval){
+       die('fail to create database: '.mysql_error());
+   }
+   echo 'Create database successfully\n';
+   
+   mysql_close($conn);
+<?>
+</body>
+
+</html>
